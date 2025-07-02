@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded",()=>{
    const muteUnmute = document.querySelector(".volume");
   
   //video link add:@@@@@@@@@@@@@@@@@
-  video.src = "/miniproject/video/videoplayback.mp4";
+  video.src = "/miniproject/videoplayback.mp4";
   
   
   //document.querySelector(".controll").style.opacity = "1";
