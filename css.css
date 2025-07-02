@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.contener{
+  width: 96%;
+  overflow: hidden;
+  position: relative;
+  max-width: 1080px;
+  box-shadow: 0px 0px 1rem 0.08rem rgba(104, 128, 149, 0.8);
+}
+
+.contener .video {
+  width: 100%;
+  border-radius: 0.6rem;
+  min-height: 450px;
+  max-width: 1080px;
+}
+
+.controll{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(48, 58, 54, 0.82);
+}
+
+.progressBar{
+  width: 10rem;
+}
+
+.controll button{
+  width: 2.2rem;
+}
+
+ .controll .volume-progress{
+  width: 4rem;
+}
+
+.overlay-play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: (-50%, -50%);
+  opacity: 0;
+  transition: opacity  0.3s ease-in-out;
+}
+
+.contener:hover .overlay-play{
+  opacity: 0.4;
+  transform: scale(6);
+}
+
+.contener:hover .controll{
+  opacity: 1;
+}
+
+button,input[type=range] {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+}
